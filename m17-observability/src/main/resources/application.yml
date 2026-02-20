@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/observability
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus
+  metrics:
+    tags:
+      application: mongodb-tutorial
+    export:
+      prometheus:
+        enabled: true

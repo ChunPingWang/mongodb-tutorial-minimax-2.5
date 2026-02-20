@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/migration_versioning
+
+migration:
+  enabled: true
+  auto-migrate: true
+  target-version: 4
